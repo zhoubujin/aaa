@@ -7,11 +7,11 @@ function random(min,max) {
  window.setInterval(refreshCount, 1000);
  function refreshCount() {
   count++
-  alert(count +" " +delay)
+  console.log(count +" " +delay)
   if(delay == count){
    count =0
    delay = random(10,20)
-   alert("重置"+count +" " +delay)
+   console.log("重置"+count +" " +delay)
    $("#pub_msg_input").val("aaa")
    $("#msg_send_bt").attr("class","btn-sendMsg enable")
    $("#msg_send_bt").click()

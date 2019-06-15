@@ -1,10 +1,16 @@
+
 delay = random(10,20)
 count = 0
+var res = confirm("请选择");
+if(res == true){
+  window.setInterval(refreshCount, 1000);
+}
+
 function random(min,max) {
  return parseInt(Math.random() * (max - min + 1) + min);
 }
  
- window.setInterval(refreshCount, 1000);
+
  function refreshCount() {
   count++
   console.log(count +" " +delay)

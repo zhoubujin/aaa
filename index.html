@@ -1,20 +1,18 @@
-<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-<title>菜鸟教程(runoob.com)</title>
-</head>
 <body>
 
-<p>点击按钮，在等待 3 秒后弹出 "Hello"。</p>
-<button onclick="myFunction()">点我</button>
-
-<script>
-function myFunction()
+<input type="text" id="clock" />
+<script type="text/javascript">
+var int=self.setInterval("clock()",1000);
+function clock()
 {
-    setTimeout(function(){alert("Hello")},3000);
+var d=new Date();
+var t=d.toLocaleTimeString();
+document.getElementById("clock").value=t;
 }
 </script>
+
+<button onclick="int=window.clearInterval(int)">停止</button>
 
 </body>
 </html>

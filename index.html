@@ -4,13 +4,24 @@
  
 <script type="text/javascript">
 
-    //循环执行，每隔1秒钟执行一次 1000 
-    var t1=window.setInterval(refreshCount, 1000);
-    function refreshCount() {
-      console.log("ready");
-    }
-    //去掉定时器的方法  
-    //window.clearInterval(t1);   
+delay = random(10,20)
+count = 0
+function random(min,max) {
+ return parseInt(Math.random() * (max - min + 1) + min);
+}
+ 
+ window.setInterval(refreshCount, 1000);
+ function refreshCount() {
+  count++
+  //delay = random(10,20)
+  console.log(count)
+ }
+
+
+
+// $("#pub_msg_input").val("aaa")
+// $("#msg_send_bt").attr("class","btn-sendMsg enable")
+// $("#msg_send_bt").click()
 
 </script>
 </body>

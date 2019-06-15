@@ -13,12 +13,13 @@ function random(min,max) {
  window.setInterval(refreshCount, 1000);
  function refreshCount() {
   count++
+  console.log(count +" " +delay)
   if(delay == count){
    count =0
    delay = random(10,20)
   console.log("重置"+count +" " +delay)
   }
-  console.log(count +" " +delay)
+  
  
  }
 

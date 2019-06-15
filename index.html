@@ -1,19 +1,14 @@
 <html>
 <body>
 
-<input type="text" id="clock" />
+ 
 <script type="text/javascript">
-var int="";
-function clock()
-{
-var d=new Date();
-var t=d.toLocaleTimeString();
-document.getElementById("clock").value=t;
-}
-</script>
 
-<button onclick="int=window.clearInterval(int)">停止</button>
-<button onclick="int=window.setInterval('clock()',1000)">停止</button>
-<button onclick="int=window.setInterval('clock()',3000)">停止</button>
+  var tmid = window.setTimeout("alert('aaa')", "1000");
+
+window.clearTimeout(tmid);
+  
+</script>
+ 
 </body>
 </html>

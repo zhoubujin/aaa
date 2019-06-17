@@ -1,13 +1,13 @@
-            $(document).ready(function(){
-                $("#btn").click(function(){
-                    $("#choiceWindow").slideDown(300);
-                    $("#backGround").show();
+$(document).ready(function(){
 
-            });
+            $("#choiceWindow").slideDown(300);
+            $("#backGround").show();
+
+
 
             $("#x").click(function(){
-                $("#choiceWindow").slideUp(300);
-                $("#backGround").hide();
+                        $("#choiceWindow").slideUp(300);
+                        $("#backGround").hide();
             })
 
-            });
+});

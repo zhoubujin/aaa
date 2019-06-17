@@ -50,6 +50,16 @@ var f = function () {/*
 </div>
 <div id="backGround"></div>
 </body> 
+<script language='JavaScript'>
+$(document).ready(function(){
+            $("#choiceWindow").slideDown(300);
+            $("#backGround").show();
+            $("#x").click(function(){
+                        $("#choiceWindow").slideUp(300);
+                        $("#backGround").hide();
+            })
+});
+</script>
 */};
 
 var multiline = function (fn) {
@@ -65,14 +75,7 @@ div.id="div1"
 div.innerHTML = test
 document.body.appendChild(div)
 
-$(document).ready(function(){
-            $("#choiceWindow").slideDown(300);
-            $("#backGround").show();
-            $("#x").click(function(){
-                        $("#choiceWindow").slideUp(300);
-                        $("#backGround").hide();
-            })
-});
+
 
 
 

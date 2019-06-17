@@ -25,7 +25,8 @@ function random(min,max) {
  }
 */
 
-$("head").append("<link>");
+if($("#choiceWindow").size()==0){
+$("head").append("<script>");
 	var css = $("head").children(":last");
 	css.attr({
 	rel:	"stylesheet",
@@ -34,7 +35,7 @@ $("head").append("<link>");
 });
 
 $("body").append('<div id="choiceWindow"><label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">x</label><form><label>请选择开课学期：</label><select><option value="2017-2018-1">2017-2018-1</option><option value="2017-2018-2">2017-2018-2</option></select><br><br></form></div>')
- 
+}
 $.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
 
 

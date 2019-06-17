@@ -32,7 +32,7 @@ $("head").append("<link>");
 	type:	"text/css",
 	href:	"https://zhoubujin.github.io/aaa/asidenav.css"
 });
-$.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
+//$.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
 
 var f = function () {/*
 <body> 

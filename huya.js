@@ -36,7 +36,6 @@ $("head").append("<link>");
 
 var f = function () {/*
 <body> 
-
 <div id="choiceWindow">
 	<label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">x</label>
 	<form>
@@ -50,16 +49,6 @@ var f = function () {/*
 </div>
 <div id="backGround"></div>
 </body> 
-<script language='JavaScript'>
-$(document).ready(function(){
-            $("#choiceWindow").slideDown(300);
-            $("#backGround").show();
-            $("#x").click(function(){
-                        $("#choiceWindow").slideUp(300);
-                        $("#backGround").hide();
-            })
-});
-</script>
 */};
 
 var multiline = function (fn) {

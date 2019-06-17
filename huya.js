@@ -35,26 +35,22 @@ $("head").append("<link>");
 $.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
 
 var f = function () {/*
-<div>
-    <svg width="0" height="0">
-        <defs>
-            <filter id="goo">
-                <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
-                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo"></feColorMatrix>
-                <feComposite in="SourceGraphic" in2="goo" operator="atop"></feComposite>
-            </filter>
-        </defs>
-    </svg>
-    <div class="aside-nav bounceInUp animated" id="aside-nav">
-        <label for="" class="aside-menu" title="按住拖动">菜单</label>
+<body> 
+<div>这是一个主界面</div><br>
+<button id="btn">点击这里实现弹窗</button>
+<div id="choiceWindow">
+	<label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">x</label>
+	<form>
+		<label>请选择开课学期：</label>&nbsp &nbsp  &nbsp 
+		<select>
+			<option value="2017-2018-1">2017-2018-1</option>
+			<option value="2017-2018-2">2017-2018-2</option>
+		</select><br><br>
 
-        <a href="javascript:void(0)" title="返回首页" class="menu-item menu-first">首页</a>
-        <a href="javascript:void(0)" title="QQ咨询" class="menu-item menu-second">QQ</a>
-        <a href="javascript:void(0)" title="一键预约" class="menu-item menu-third">预约</a>
-        <a href="javascript:void(0)" title="微信公众号" class="menu-item menu-line menu-fourth">关注<br>微信</a> <!-- *跳到商家微信推广* -->
-    </div>
-</div>  
-
+	</form>
+</div>
+<div id="backGround"></div>
+</body> 
 */};
 
 var multiline = function (fn) {

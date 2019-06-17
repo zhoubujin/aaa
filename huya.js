@@ -36,8 +36,7 @@ $.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
 
 var f = function () {/*
 <body> 
-<div>这是一个主界面</div><br>
-<button id="btn">点击这里实现弹窗</button>
+
 <div id="choiceWindow">
 	<label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">x</label>
 	<form>

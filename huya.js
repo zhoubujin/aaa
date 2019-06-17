@@ -33,35 +33,7 @@ $("head").append("<link>");
 	href:	"https://zhoubujin.github.io/aaa/asidenav.css"
 });
 
-var f = function () {/*
-	<body> 
-	<div id="choiceWindow">
-		<label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">x</label>
-		<form>
-			<label>请选择开课学期：</label>&nbsp &nbsp  &nbsp 
-			<select>
-				<option value="2017-2018-1">2017-2018-1</option>
-				<option value="2017-2018-2">2017-2018-2</option>
-			</select><br><br>
-	
-		</form>
-	</div>
-	<div id="backGround"></div>
-	</body> 
-	*/};
-	
-	var multiline = function (fn) {
-	    var str = fn.toString().split('\n');
-	    // console.log(str);
-	    return str.slice(1, str.length - 1 ).join('\n');
-	}
-	
-	var test = multiline(f)
-	
-	let div = document.createElement('div');
-	div.id="div1"
-	div.innerHTML = test
-	document.body.appendChild(div)
+$("body").append('<div id="choiceWindow"><label id="x" style="position: absolute;top:2px;left: 95%;font-size: 25px;">x</label><form><label>请选择开课学期：</label><select><option value="2017-2018-1">2017-2018-1</option><option value="2017-2018-2">2017-2018-2</option></select><br><br></form></div>')
  
 $.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
 

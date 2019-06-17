@@ -32,8 +32,6 @@ $("head").append("<link>");
 	type:	"text/css",
 	href:	"https://zhoubujin.github.io/aaa/asidenav.css"
 });
-//$.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
-
 var f = function () {/*
 <body> 
 <div id="choiceWindow">
@@ -65,6 +63,7 @@ div.innerHTML = test
 document.body.appendChild(div)
 
 
+$.getScript('https://zhoubujin.github.io/aaa/asidenav.js');
 
 
 

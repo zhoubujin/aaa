@@ -1,17 +1,27 @@
-
-
-
-.aside-nav {
-	position: fixed;
-	right: -90px;
-	top: 150px;
-	width: 260px;
-	height: 260px;
-	-webkit-filter: url(#goo);
-	filter: url(#goo);
-	-ms-user-select: none;
-	-moz-user-select: none;
-	-webkit-user-select: none;
-	user-select: none;
-	opacity: .75
-}
+        #choiceWindow {
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 30%; 
+            height: 55%; 
+            padding: 20px; 
+            border: 3px solid #ccc; 
+            background-color: white;
+            z-index:2; 
+            overflow: auto; 
+        }
+        #backGround {
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 1100px; 
+            background-color: black; 
+            z-index:1; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88);
+        }
+        #x:hover {cursor: pointer;color: rgb(55,198,192);}
